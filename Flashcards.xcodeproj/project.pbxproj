@@ -12,6 +12,7 @@
 		942535B51F30F9680091B681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942535B31F30F9680091B681 /* Main.storyboard */; };
 		942535B71F30F9680091B681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942535B61F30F9680091B681 /* Assets.xcassets */; };
 		942535BA1F30F9680091B681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942535B81F30F9680091B681 /* LaunchScreen.storyboard */; };
+		942535C21F3102B70091B681 /* Flashcards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942535C11F3102B70091B681 /* Flashcards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		942535B61F30F9680091B681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942535B91F30F9680091B681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		942535BB1F30F9680091B681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942535C11F3102B70091B681 /* Flashcards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				942535AF1F30F9680091B681 /* AppDelegate.swift */,
 				942535B11F30F9680091B681 /* ViewController.swift */,
 				942535B31F30F9680091B681 /* Main.storyboard */,
+				942535C11F3102B70091B681 /* Flashcards.swift */,
 				942535B61F30F9680091B681 /* Assets.xcassets */,
 				942535B81F30F9680091B681 /* LaunchScreen.storyboard */,
 				942535BB1F30F9680091B681 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942535C21F3102B70091B681 /* Flashcards.swift in Sources */,
 				942535B21F30F9680091B681 /* ViewController.swift in Sources */,
 				942535B01F30F9680091B681 /* AppDelegate.swift in Sources */,
 			);
@@ -263,11 +267,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BL6LFS7HG6;
 				INFOPLIST_FILE = Flashcards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iD-Tech.Joe.Flashcards";
+				PRODUCT_BUNDLE_IDENTIFIER = "ID-Tech";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +283,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BL6LFS7HG6;
 				INFOPLIST_FILE = Flashcards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iD-Tech.Joe.Flashcards";
+				PRODUCT_BUNDLE_IDENTIFIER = "ID-Tech";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +314,7 @@
 				942535C01F30F9680091B681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
